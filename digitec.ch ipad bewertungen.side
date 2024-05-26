@@ -1,0 +1,108 @@
+{
+  "id": "8ccd4ced-14d0-42ae-a04f-4c92abc9564c",
+  "version": "2.0",
+  "name": "digitec.ch test3",
+  "url": "https://www.digitec.ch",
+  "tests": [{
+    "id": "e129dd22-567c-4aae-8c32-53e0df72c220",
+    "name": "ipad search",
+    "commands": [{
+      "id": "922d4af1-eaf3-49da-82e0-36916fa021e9",
+      "comment": "",
+      "command": "open",
+      "target": "/de",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "74f65b6b-0964-40e1-9c56-7220d0e9cda6",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1574x1226",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "64d7ba13-22da-4070-91bb-bdc4be17adf0",
+      "comment": "",
+      "command": "click",
+      "target": "id=q",
+      "targets": [
+        ["id=q", "id"],
+        ["name=q", "name"],
+        ["css=#q", "css:finder"],
+        ["xpath=//input[@id='q']", "xpath:attributes"],
+        ["xpath=//div[@id='pageHead']/header/div[3]/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a050ce4f-605f-4481-ab95-5b0fd7c7b0c6",
+      "comment": "",
+      "command": "type",
+      "target": "id=q",
+      "targets": [
+        ["id=q", "id"],
+        ["name=q", "name"],
+        ["css=#q", "css:finder"],
+        ["xpath=//input[@id='q']", "xpath:attributes"],
+        ["xpath=//div[@id='pageHead']/header/div[3]/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Apple iPad Pro 13"
+    }, {
+      "id": "7bb25799-50d5-4674-86a9-2195f5b92a01",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=q",
+      "targets": [
+        ["id=q", "id"],
+        ["name=q", "name"],
+        ["css=#q", "css:finder"],
+        ["xpath=//input[@id='q']", "xpath:attributes"],
+        ["xpath=//div[@id='pageHead']/header/div[3]/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "6ed106a9-33d2-4013-b143-78225b11e494",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.sc-b3dc936d-1:nth-child(1) > .sc-d9c28d7f-0",
+      "targets": [
+        ["css=.sc-b3dc936d-1:nth-child(1) > .sc-d9c28d7f-0", "css:finder"],
+        ["xpath=//div[@id='productListingContainer']/div[4]/article/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/de/s1/product/apple-ipad-pro-13-2024-m4-nur-wlan-13-256-gb-space-black-tablet-45556635')]", "xpath:href"],
+        ["xpath=//article/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "04a4d2f2-052b-4962-8a9b-ddc640a7cfef",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sc-b3dc936d-1:nth-child(1) > .sc-d9c28d7f-0",
+      "targets": [
+        ["css=.sc-b3dc936d-1:nth-child(1) > .sc-d9c28d7f-0", "css:finder"],
+        ["xpath=//div[@id='productListingContainer']/div[4]/article/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/de/s1/product/apple-ipad-pro-13-2024-m4-nur-wlan-13-256-gb-space-black-tablet-45556635')]", "xpath:href"],
+        ["xpath=//article/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "266f0f17-5248-4de0-9b6e-21647b1c3167",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.sc-a84ca9f0-2",
+      "targets": [],
+      "value": "9"
+    }]
+  }],
+  "suites": [{
+    "id": "1daa70a1-bd59-48e6-931e-404c2db6953b",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["e129dd22-567c-4aae-8c32-53e0df72c220"]
+  }],
+  "urls": ["https://www.digitec.ch/"],
+  "plugins": []
+}
